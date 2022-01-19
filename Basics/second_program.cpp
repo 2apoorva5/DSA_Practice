@@ -21,6 +21,8 @@ int main() {
     cout << D << endl;
 
 
+    // WARNING : Don't use same variable name multiple times.
+
 
     // sizeof() function gives the size or memory in bytes a variable is holding
 
@@ -35,4 +37,18 @@ int main() {
     cout << "Size of BL is : " << sizeBL << endl;           // 1 
     cout << "Size of F is : " << sizeF << endl;             // 4
     cout << "Size of D is : " << sizeD << endl;             // 8
+
+    /* Different datatypes use different amount of memory. Amount of memory used also depends 
+       on the architecture of the CPU. */
+
+
+    // Converison of one datatype to another (if it is valid) is called typecasting.
+
+    int a = 'a';
+    char ch = 98;
+
+    cout << "a : " << a << endl;
+    cout << "ch : " << ch << endl;
+
+    // This automatic typecasting is called Implicit Typecasting.
 }
