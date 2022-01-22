@@ -1,19 +1,27 @@
-// Find if a number is positive, negative or zero
+// Find greatest between three numbers
 
 #include<iostream>
 using namespace std;
 
 int main() {
-    int A;
+    int A, B, C;
 
     cout << "Enter the value of A : ";
     cin >> A;
 
-    if(A > 0) {
-        cout << "A is positive!" << endl;
-    } else if(A < 0) {
-        cout << "A is negative!" << endl;
+    cout << "Enter the value of B : ";
+    cin >> B;
+
+    cout << "Enter the value of C : ";
+    cin >> C;
+
+    if(A > B && A > C) {
+        cout << "A is greatest!" << endl;
+    } else if(B > A && B > C) {
+        cout << "B is greatest!" << endl;
+    } else if(C > A && C > B) {
+        cout << "C is greatest!" << endl;
     } else {
-        cout << "A is 0!" << endl;
+        cout << "Can't determine!" << endl;
     }
 }
