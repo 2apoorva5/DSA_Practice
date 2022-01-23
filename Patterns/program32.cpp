@@ -21,27 +21,27 @@ int main() {
     while (i <= n)
     {
         //1st triangle
-        int num1 = 1;
-        while (num1 <= n - i + 1)
+        int j = 1;
+        while (j <= n - i + 1)
         {
-            cout << num1 << " ";
-            num1 = num1 + 1;
+            cout << j << " ";
+            j = j + 1;
         }
 
         //2nd triangle
-        int stars = 1;
-        while (stars <= 2*i - 2)
+        int k = 1;
+        while (k <= 2*(i - 1))
         {
             cout << "* ";
-            stars = stars + 1;
+            k = k + 1;
         }
         
         //3rd triangle
-        int num2 = n - i + 1;
-        while (num2 >= 1)
+        int l = n - i + 1;
+        while (l >= 1)
         {
-            cout << num2 << " ";
-            num2 = num2 - 1;
+            cout << l << " ";
+            l = l - 1;
         }
         
         cout << endl;
