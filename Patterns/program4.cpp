@@ -19,11 +19,11 @@ int main() {
     int i = 1;
     while (i <= n)
     {
-        int j = 1;
-        while (j <= n)
+        int j = n;
+        while (j >= 1)
         {
-            cout << n - j + 1 << " ";
-            j = j + 1;
+            cout << j << " ";
+            j = j - 1;
         }
         
         cout << endl;

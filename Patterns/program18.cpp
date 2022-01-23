@@ -1,8 +1,9 @@
 /*
 
-    A B C
-    D E F
-    G H I
+    D
+    C D
+    B C D
+    A B C D
 
 */
 
@@ -15,17 +16,17 @@ int main() {
     cout << "Enter the value of n : ";
     cin >> n;
 
-    int i = 1, count = 0;
+    int i = 1;
 
     while (i <= n)
     {
         int j = 1;
+        char ch = 'A' + n - i;
 
-        while (j <= n)
+        while (j <= i)
         {
-            char ch = 'A' + count;
             cout << ch << " ";
-            count = count + 1;
+            ch = ch + 1;
             j = j + 1;
         }
         
